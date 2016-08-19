@@ -28,8 +28,11 @@ class ServiceProvider extends BaseServiceProvider
 
     public function boot()
     {
-        $configPath = __DIR__ . '/../../config/amazon-mws.php';
-        $this->publishes([$configPath => config_path('amazon-mws.php')], 'config');
+        /*
+         * Disabled for Lumen support.
+         * $configPath = __DIR__ . '/../../config/amazon-mws.php';
+         * $this->publishes([$configPath => config_path('amazon-mws.php')], 'config');
+        */
     }
 
     /**
